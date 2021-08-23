@@ -4,12 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.laundry.dto.EstadoDTO;
 import com.example.demo.laundry.entity.Estado;
 import com.example.demo.laundry.repository.EstadoRepository;
 import com.example.demo.laundry.services.EstadoService;
 
+@Service
 public class EstadoServiceImpl implements EstadoService{
 	
 	@Autowired

@@ -11,11 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.laundry.dto.ClienteDTO;
 import com.example.demo.laundry.dto.EstadoDTO;
-import com.example.demo.laundry.entity.Cliente;
 import com.example.demo.laundry.entity.Estado;
-import com.example.demo.laundry.services.ClienteService;
 import com.example.demo.laundry.services.EstadoService;
 
 @RestController
