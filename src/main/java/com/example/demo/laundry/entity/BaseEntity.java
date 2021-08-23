@@ -26,4 +26,5 @@ public class BaseEntity {
 	protected Date createdAt;
 	protected String updatedBy;
 	protected Date updatedAt;
+	
 }
