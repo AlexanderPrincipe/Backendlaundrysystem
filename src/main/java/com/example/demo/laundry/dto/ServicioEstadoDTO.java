@@ -1,35 +1,31 @@
 package com.example.demo.laundry.dto;
 
-
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class ClienteDTO {
+public class ServicioEstadoDTO {
 	
 	private Integer id;
 	
-	private String name;
+	private Integer servicio;
 	
-	private String apellido;
+	private Integer estado;
 	
 	private String createdBy;
 	
 	private String updatedBy;
 
-	public ClienteDTO(Integer id, String name, String apellido, String createdBy, String updatedBy) {
+	public ServicioEstadoDTO(Integer id, Integer servicio, Integer estado, String createdBy, String updatedBy) {
 		this.id = id;
-		this.name = name;
-		this.apellido = apellido;
+		this.servicio = servicio;
+		this.estado = estado;
 		this.createdBy = createdBy;
 		this.updatedBy = updatedBy;
 	}
-	
-	
-	
-	
 
+	
+	
 
 }

@@ -7,7 +7,6 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,13 +17,10 @@ import lombok.Setter;
 @DynamicInsert
 @DynamicUpdate
 @NoArgsConstructor
-@Table(name = "cliente")
-public class Cliente extends BaseEntity{
+@Table(name = "tiposervicio")
+public class TipoServicio extends BaseEntity{
 	
 	@Column(name = "name")
 	private String name;
-	
-	@Column(name = "apellido")
-	private String apellido;
 
 }
