@@ -16,6 +16,7 @@ import com.example.demo.laundry.dto.ServicioDTO;
 import com.example.demo.laundry.entity.Servicio;
 import com.example.demo.laundry.services.ServicioService;
 
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class ServicioController {
 
@@ -27,7 +28,7 @@ public class ServicioController {
 		return servicioService.listarPorId(id);
 	}
 	
-	@CrossOrigin(origins = "http://localhost:4200")
+	
 	@GetMapping("/listarServicio")
 	public List<Servicio> listar() {
 		return servicioService.listar();
